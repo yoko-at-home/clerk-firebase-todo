@@ -59,7 +59,7 @@ export const DnD = () => {
       <Droppable droppableId='images' direction='horizontal'>
         {(provided: any) => {
           return (
-            <div className='px-1'>
+            <div className='py-8'>
               <div className='text-center'>
                 ドラッグして画像を並び替えることができます
               </div>

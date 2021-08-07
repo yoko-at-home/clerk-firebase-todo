@@ -8,7 +8,7 @@ export default function Index() {
   return (
     <div>
       <Head>
-        <title>Premium Recipes</title>
+        <title>Kotaro の食卓</title>
         <meta name='description' content='Clerk-Firebase integration' />
         <link rel='icon' href='/favicon.png' />
       </Head>
