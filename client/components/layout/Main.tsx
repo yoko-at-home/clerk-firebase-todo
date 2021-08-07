@@ -10,16 +10,16 @@ export function Main({ children }: MainProps) {
   return (
     <>
       <Flex
-        as="nav"
+        as='nav'
         padding={4}
-        bg="brand.blue"
-        color="white"
-        justifyContent="space-between"
-        alignItems="center"
+        bg='brand.blue'
+        color='white'
+        justifyContent='space-between'
+        alignItems='center'
       >
         <Flex align='center' mr={5}>
           <Heading as='h2' size='md' letterSpacing={"tighter"}>
-            KOTARO
+            KOTARO の食卓
           </Heading>
           {/* <Flex>
             <a href='https://github.com/clerkinc/'>
@@ -49,7 +49,7 @@ export function Main({ children }: MainProps) {
           </Flex>
         </SignedIn>
       </Flex>
-      <Flex alignItems="center" justifyContent="center" margin="20px 0">
+      <Flex alignItems='center' justifyContent='center' margin='20px 0'>
         {children}
       </Flex>
     </>
