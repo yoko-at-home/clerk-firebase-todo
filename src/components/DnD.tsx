@@ -8,6 +8,10 @@ const ITEMS = [
   { id: "2", url: "https://placehold.jp/200x200.png" },
   { id: "3", url: "https://placehold.jp/250x250.png" },
   { id: "4", url: "https://placehold.jp/300x300.png" },
+  { id: "5", url: "https://placehold.jp/150x150.png" },
+  { id: "6", url: "https://placehold.jp/200x200.png" },
+  { id: "7", url: "https://placehold.jp/250x250.png" },
+  { id: "8", url: "https://placehold.jp/300x300.png" },
 ];
 
 export const DnD = () => {
@@ -34,7 +38,7 @@ export const DnD = () => {
             <ul
               {...provided.droppableProps}
               ref={provided.innerRef}
-              className='flex bg-blue-500'
+              className='flex bg-blue-500 justify-around'
             >
               {items.map((item, index) => {
                 return (
