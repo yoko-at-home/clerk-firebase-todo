@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Text } from "@chakra-ui/react";
 import { SignedIn, SignedOut } from "@clerk/clerk-react";
-import { Recipes } from "../client/components/recipes";
+import { Recipes } from "../../client/components/recipes";
 
 export default function Index() {
   return (

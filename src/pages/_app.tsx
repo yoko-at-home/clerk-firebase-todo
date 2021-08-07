@@ -2,11 +2,11 @@ import type { AppProps } from "next/app";
 import { ClerkProvider } from "@clerk/clerk-react";
 import { useRouter } from "next/router";
 import { ChakraProvider } from "@chakra-ui/react";
-import { Main } from "../client/components/layout/Main";
+import { Main } from "../../client/components/layout/Main";
 
 import firebase from "firebase/app";
-import { config } from "../config/firebase.web";
-import { defaultTheme } from "../client/theme";
+import { config } from "../../config/firebase.web";
+import { defaultTheme } from "../../client/theme";
 
 if (!firebase.apps.length) {
   firebase.initializeApp(config);
