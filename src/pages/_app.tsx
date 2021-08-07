@@ -3,6 +3,7 @@ import { ClerkProvider } from "@clerk/clerk-react";
 import { useRouter } from "next/router";
 import { ChakraProvider } from "@chakra-ui/react";
 import { Main } from "../../client/components/layout/Main";
+import "../styles/globals.css";
 
 import firebase from "firebase/app";
 import { config } from "../../config/firebase.web";
