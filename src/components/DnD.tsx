@@ -60,7 +60,9 @@ export const DnD = () => {
         {(provided: any) => {
           return (
             <div className='px-1'>
-              <div className='text-center'>画像は並び替えることができます٩( 'ω' )و</div>
+              <div className='text-center'>
+                ドラッグして画像を並び替えることができます
+              </div>
               <ul
                 {...provided.droppableProps}
                 ref={provided.innerRef}
