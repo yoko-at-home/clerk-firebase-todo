@@ -34,7 +34,7 @@ export const DnD = () => {
             <ul
               {...provided.droppableProps}
               ref={provided.innerRef}
-              className='flex bg-green-400'
+              className='flex bg-blue-500'
             >
               {items.map((item, index) => {
                 return (

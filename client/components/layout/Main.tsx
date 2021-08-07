@@ -19,7 +19,7 @@ export function Main({ children }: MainProps) {
       >
         <Flex align='center' mr={5}>
           <Heading as='h2' size='md' letterSpacing={"tighter"}>
-            Qin TODO
+            KOTARO
           </Heading>
           {/* <Flex>
             <a href='https://github.com/clerkinc/'>
