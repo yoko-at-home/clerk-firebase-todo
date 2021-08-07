@@ -29,7 +29,7 @@ export const DnD = () => {
   return (
     <DragDropContext onDragEnd={handleOnDragEnd}>
       <Droppable droppableId='images' direction='horizontal'>
-        {(provided) => {
+        {(provided: any) => {
           return (
             <ul
               {...provided.droppableProps}
@@ -39,7 +39,7 @@ export const DnD = () => {
               {items.map((item, index) => {
                 return (
                   <Draggable key={item.id} draggableId={item.id} index={index}>
-                    {(provided) => {
+                    {(provided: any) => {
                       return (
                         <li
                           className='mr-2'
