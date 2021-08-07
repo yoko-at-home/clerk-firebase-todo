@@ -1,0 +1,51 @@
+[debug] [2021-08-07T01:52:05.175Z] ----------------------------------------------------------------------
+[debug] [2021-08-07T01:52:05.177Z] Command:       /Users/yokoiwasaki/.volta/tools/image/node/14.15.5/bin/node /Users/yokoiwasaki/Desktop/projects/Next/clerk-firebase-todo/node_modules/.bin/firebase init
+[debug] [2021-08-07T01:52:05.177Z] CLI Version:   9.16.0
+[debug] [2021-08-07T01:52:05.177Z] Platform:      darwin
+[debug] [2021-08-07T01:52:05.177Z] Node Version:  v14.15.5
+[debug] [2021-08-07T01:52:05.178Z] Time:          Sat Aug 07 2021 10:52:05 GMT+0900 (日本標準時)
+[debug] [2021-08-07T01:52:05.179Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-07T01:52:05.223Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-07T01:52:05.224Z] > authorizing via signed-in user (yoko.iwasaki8@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/yokoiwasaki/Desktop/projects/Next/clerk-firebase-todo
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using fir-clerk. 
+[debug] [2021-08-07T01:52:54.677Z] > refreshing access token with scopes: []
+[debug] [2021-08-07T01:52:54.678Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-07T01:52:54.894Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sat, 07 Aug 2021 01:52:54 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-07T01:52:54.973Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-clerk [none]
+[debug] [2021-08-07T01:52:55.711Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-clerk 403
+[debug] [2021-08-07T01:52:55.711Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-clerk {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-08-07T01:52:55.712Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-08-07T01:52:55.823Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (/Users/yokoiwasaki/Desktop/projects/Next/clerk-firebase-todo/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Client.doRequest (/Users/yokoiwasaki/Desktop/projects/Next/clerk-firebase-todo/node_modules/firebase-tools/lib/apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Client.request (/Users/yokoiwasaki/Desktop/projects/Next/clerk-firebase-todo/node_modules/firebase-tools/lib/apiv2.js:96:20)
+    at async Object.getFirebaseProject (/Users/yokoiwasaki/Desktop/projects/Next/clerk-firebase-todo/node_modules/firebase-tools/lib/management/projects.js:290:21)
+    at async Object.doSetup [as project] (/Users/yokoiwasaki/Desktop/projects/Next/clerk-firebase-todo/node_modules/firebase-tools/lib/init/features/project.js:77:27)
+    at async init (/Users/yokoiwasaki/Desktop/projects/Next/clerk-firebase-todo/node_modules/firebase-tools/lib/init/index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project fir-clerk. Please make sure the project exists and your account has permission to access it.
